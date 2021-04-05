@@ -1,0 +1,19 @@
+.header {
+    justify-content: center;
+    height: 10%;
+    background-color: rgb(109, 101, 101);
+}
+
+span {
+    display: flex;
+    height: center;
+}
+
+img {
+    height: 3rem;
+}
+
+h1 {
+    padding-left: 1.2rem;
+    font-size: 1.5rem
+}
