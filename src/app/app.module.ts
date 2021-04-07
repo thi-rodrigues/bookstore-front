@@ -15,9 +15,13 @@ import { MatListModule } from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
 import { HomeComponent } from "./components/views/home/home.component";
 import { MatCardModule } from "@angular/material/card";
-import { CategoriaReadComponent } from "./components/views/categoria/categoria-read/categoria-read.component";
+import { CategoriaReadComponent } from "./components/views/categoria/read/categoria-read.component";
+import { CategoriaCreateComponent } from "./components/views/categoria/create/categoria-create.component";
 import { MatTableModule } from "@angular/material/table";
 import { MatButtonModule } from "@angular/material/button";
+import { FormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import { MatButtonModule } from "@angular/material/button";
     NavComponent,
     HomeComponent,
     CategoriaReadComponent,
+    CategoriaCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,10 @@ import { MatButtonModule } from "@angular/material/button";
     MatCardModule,
     MatTableModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

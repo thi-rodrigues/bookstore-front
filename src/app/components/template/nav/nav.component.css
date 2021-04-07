@@ -1,8 +1,7 @@
 .container {
-    height: 85%;
-    background-color: rgb(136, 221, 78);
+  height: 85%;
 }
 
 i {
-    padding-right: .6rem;
+  padding-right: 0.6rem;
 }
