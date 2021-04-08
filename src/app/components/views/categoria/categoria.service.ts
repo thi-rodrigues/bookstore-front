@@ -17,15 +17,23 @@ export class CategoriaService {
     return this.http.get<Categoria[]>(`${this.baseUrl}`);
   }
 
+  findById(id: String): Observable<Categoria> {
+    return this.http.get<Categoria>(`${this.baseUrl}/${id}`);
+  }
+
   create(categoria: Categoria): Observable<Categoria> {
     return this.http.post<Categoria>(`${this.baseUrl}`, categoria);
   }
 
+  delete(id: String): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/${id}`);
+  }
+
   messagem(str: string): void {
-    this._snack.open(`${str}`, 'OK', {
-      horizontalPosition: 'end',
-      verticalPosition: 'top',
-      duration: 3000
-    })
+    this._snack.open(`${str}`, "OK", {
+      horizontalPosition: "end",
+      verticalPosition: "top",
+      duration: 3000,
+    });
   }
 }

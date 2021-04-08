@@ -3,7 +3,14 @@
     <h1>Categoria</h1>
   </div>
 
-  <button (click)="CategoriaCreate()" class="mat-elevation-z8 content-table" mat-stroked-button color="primary" >Nova Categoria </button>
+  <button
+    (click)="CategoriaCreate()"
+    class="mat-elevation-z8 content-table"
+    mat-stroked-button
+    color="primary"
+  >
+    Nova Categoria
+  </button>
 
   <div class="mat-elevation-z8 content-table">
     <table class="table" mat-table [dataSource]="categorias">
@@ -42,7 +49,7 @@
           <a class="edit" href="#">
             <i class="material-icons">edit</i>
           </a>
-          <a class="delete" href="#">
+          <a class="delete" routerLink="delete/{{ row.id }}">
             <i class="material-icons">delete</i>
           </a>
         </td>
