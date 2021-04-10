@@ -3,14 +3,7 @@
     <h1>Categoria</h1>
   </div>
 
-  <button
-    (click)="CategoriaCreate()"
-    class="mat-elevation-z8 content-table"
-    mat-stroked-button
-    color="primary"
-  >
-    Nova Categoria
-  </button>
+  <button (click)="CategoriaCreate()" class="mat-elevation-z8 content-table"  mat-stroked-button color="primary">Nova Categoria</button>
 
   <div class="mat-elevation-z8 content-table">
     <table class="table" mat-table [dataSource]="categorias">
@@ -36,7 +29,7 @@
       <ng-container matColumnDef="livros">
         <th mat-header-cell *matHeaderCellDef>LIVROS</th>
         <td mat-cell *matCellDef="let row">
-          <a class="livros" routerLink="{{ row.id}}/livros">
+          <a class="livros" routerLink="{{ row.id }}/livros">
             <i class="material-icons">book</i>
           </a>
         </td>
