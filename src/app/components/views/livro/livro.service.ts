@@ -29,9 +29,8 @@ export class LivroService {
     return this.http.post<Livro>(`${this.url}?categoria=${id_cat}`, livro);
   }
 
-  delete(id: String):Observable<void> {
-    //const url = `${this.baseUrl}/livros/${id}`
-    return this.http.delete<void>(`${this.url}/${id}`)
+  delete(id: String): Observable<void> {
+    return this.http.delete<void>(`${this.url}/${id}`);
   }
 
   mensagem(str: String): void {
