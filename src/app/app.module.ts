@@ -24,6 +24,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { FormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { LivroReadAllComponent } from './components/views/livro/livro-read-all/livro-read-all.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
+    LivroReadAllComponent,
   ],
   imports: [
     BrowserModule,
