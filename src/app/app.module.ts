@@ -18,6 +18,7 @@ import { MatCardModule } from "@angular/material/card";
 import { CategoriaReadComponent } from "./components/views/categoria/read/categoria-read.component";
 import { CategoriaCreateComponent } from "./components/views/categoria/create/categoria-create.component";
 import { CategoriaDeleteComponent } from "./components/views/categoria/delete/categoria-delete.component";
+import { CategoriaUpdateComponent } from './components/views/categoria/update/categoria-update.component';
 import { MatTableModule } from "@angular/material/table";
 import { MatButtonModule } from "@angular/material/button";
 import { FormsModule } from "@angular/forms";
@@ -34,6 +35,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     CategoriaReadComponent,
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
+    CategoriaUpdateComponent,
   ],
   imports: [
     BrowserModule,
