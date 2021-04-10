@@ -26,6 +26,8 @@ import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { LivroReadAllComponent } from './components/views/livro/livro-read-all/livro-read-all.component';
 import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
+import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { LivroCreateComponent } from './components/views/livro/livro-create/livr
     CategoriaUpdateComponent,
     LivroReadAllComponent,
     LivroCreateComponent,
+    LivroUpdateComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,8 +17,16 @@ export class LivroService {
     return this.http.get<Livro[]>(`${this.url}?categoria=${id_cat}`);
   }
 
+  findById(id: String): Observable<Livro> {
+    return this.http.get<Livro>(`${this.url}/${id}`);
+  }
+
+  update(livro: Livro): Observable<Livro> {
+    return this.http.put<Livro>(`${this.url}/${livro.id}`, livro);
+  }
+
   create(livro: Livro, id_cat: String): Observable<Livro> {
-        return this.http.post<Livro>(`${this.url}?categoria=${id_cat}`, livro);
+    return this.http.post<Livro>(`${this.url}?categoria=${id_cat}`, livro);
   }
 
   mensagem(str: String): void {
